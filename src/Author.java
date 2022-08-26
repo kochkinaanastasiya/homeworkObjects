@@ -13,9 +13,11 @@ public class Author {
     public String getSurName(){
         return surName;
     }
+    @Override
     public String toString(){
         return firstName + " " + surName;
     }
+    @Override
     public boolean equals(Object obj) {
         if (this.getClass() != obj.getClass()) {
             return false;
