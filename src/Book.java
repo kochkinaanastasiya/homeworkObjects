@@ -27,10 +27,12 @@ public class Book {
         this.yearPublication = yearPublication;
     }
 
+    @Override
     public String toString() {
         return "name = " + name + " author = " + author.toString() + " yearPublication = " + yearPublication;
     }
 
+    @Override
     public boolean equals(Object obj) {
         if (this.getClass() != obj.getClass()) {
             return false;
@@ -40,6 +42,7 @@ public class Book {
     }
     @Override
     public int hashCode() {
+
         return Objects.hash(name + author.toString() + yearPublication);
     }
 
